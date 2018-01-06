@@ -1,0 +1,47 @@
+.navigation
+	font-size: 12px
+	font-weight: 100
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+	border: 1px solid #dcdee0
+	padding: 7px 0
+	overflow: hidden
+	+r(930)
+		display: none
+.nav
+	display: flex
+	&__list
+		padding-top: 7px
+		padding-bottom: 8px
+		&-link
+			padding: 20px 40px 20px 25px
+			color: #2e3236
+			text-transform: uppercase
+			transition: 0.4s
+			.icon
+				margin-right: 9px
+			&:hover
+				background: #383e42
+				color: #fff
+				.icon
+					fill: #dcdee0
+.bg-job
+	display: flex
+	padding-right: 18px
+	p
+		text-transform: uppercase
+		.icon
+			margin-right: 9px
+.count
+	font-size: 10px
+	font-weight: 500
+	width: 16px
+	height: 16px
+	background: #ff5f4b
+	border-radius: 50%
+	text-align: center
+	line-height: 16px
+	color: #fff
+	margin-left: 15px
