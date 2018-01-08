@@ -1,33 +1,37 @@
 .footer
 	display: flex
+	flex-wrap: wrap
 	justify-content: space-between
 	width: 100%
-	border-top: 1px solid #edeff1
-	// margin-bottom: 25px
+	border-top: 1px solid $color-border
 	padding: 16px 17px 9px 20px
 	color: #2e3236
 	font-size: 11px
 	font-weight: 400
-	+r(620)
-		display: block
+	+r(651)
+		justify-content: center
 	a
 		color: #2e3236
+		padding: 3px
+		&:hover
+			text-decoration: underline
+
 	&__navig
 		display: flex
-		+r(620)
+		+r(651)
 			justify-content: center
 			margin-bottom: 10px
 		.block
 			margin-right: 60px
 			+r(710)
-				margin-right: 30px
+				margin-right: 30px			
 			+r(423)
 				margin-right: 15px
 			li
 				padding-bottom: 5px
-	.copy
+	&__copy
 		text-align: right
-		+r(620)
+		+r(651)
 			text-align: center
 
 	

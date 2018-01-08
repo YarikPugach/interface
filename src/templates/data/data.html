@@ -1,0 +1,134 @@
+{# navigation in header #}
+{% set
+	navigation = [
+	{
+		nav_mixin: null,
+		nav_link: 'Home'
+	},
+	{
+		nav_mixin: 'home',
+		nav_link: 'My docusshare'
+	},
+	{
+		nav_mixin: 'tasks',
+		nav_link: 'My tasks'
+	},
+	{
+		nav_mixin: 'favorites',
+		nav_link: 'My favorites'
+	},
+	{
+		nav_mixin: 'recent',
+		nav_link: 'Recent'
+	}
+	]
+%}
+
+
+{# post in content #}
+{% set
+	post = [
+	{
+		title: 'Collections',
+		description: 'Top level collections',
+		icon: 'layers',
+		titles: [
+			{
+				heading: 'External Materials',
+				descript: 'Content for collaboration with external partixipants'
+			},
+			{
+				heading: 'Branding Materials',
+				descript: 'All document components (text_graphics_fills_rules_ etc)'
+			},
+			{
+				heading: 'Print-ready Materials',
+				descript: 'The department that generates a print shop request  is responsiиду for the work'
+			}
+		]
+	},
+	{
+		title: 'Other links',
+		description: 'Links to other content',
+		icon: 'link',
+		titles: [
+			{
+				heading: 'My DocuShare',
+				descript: 'Your personalized DocuShare home page'
+			},
+			{
+				heading: 'WorkCentre Scan Repository',
+				descript: 'Temporary storage for scanned documents'
+			},
+			{
+				heading: 'Contact Information',
+				descript: 'Number and e-mail address of the original document  creator creator'
+			}
+		]
+	}
+	]
+%}
+
+{# slick-slider in sidebar's #}
+{% set
+	slides = [
+		{
+			img: 'photo-1.png',
+			title: 'BritishMonarchy',
+			description: '@BritishMonarchy',
+			icon_title: 'speech',
+			text: 'It is a pleasure to open the information 					Age exhibitions today at the 	 										@ScienceMuseum and I hope people will enjoy 					visiting.',
+			icon_social: 'tw',
+			date: '1.35 PM - 24 Oct 2014'
+		},
+		{
+			img: 'photo-1.png',
+			title: 'BritishMonarchy',
+			description: '@BritishMonarchy',
+			icon_title: 'speech',
+			text: 'It is a pleasure to open the information 					Age exhibitions today at the 	 										@ScienceMuseum and I hope people will enjoy 					visiting.',
+			icon_social: 'tw',
+			date: '1.35 PM - 24 Oct 2015'
+		},
+		{
+			img: 'photo-1.png',
+			title: 'BritishMonarchy',
+			description: '@BritishMonarchy',
+			icon_title: 'speech',
+			text: 'It is a pleasure to open the information 					Age exhibitions today at the 	 										@ScienceMuseum and I hope people will enjoy 					visiting.',
+			icon_social: 'tw',
+			date: '09.35 AM - 24 Oct 1994'
+		}
+	]
+%}
+
+
+{# link in footer #}
+{% set
+	nav = [
+	{
+		link: [
+
+		'Users and Groups', 
+		'Help'
+
+		]
+	},
+	{
+		link: [
+
+		'About DocuShare',
+		'Statistics'
+
+		]
+	},
+	{
+		link: [
+
+		'Mobile Client Settings',
+		'Cookies'
+
+		]
+	}
+	]
+%}

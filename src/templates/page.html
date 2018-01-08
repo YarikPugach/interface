@@ -1,9 +1,11 @@
 ---
-title: Index page
+title: SuperCompany
+
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block header %}
+	{% import "data/data.html" as header %}
 	{% include "partials/_top-panel.html" %}
 	{% include "partials/_header.html" %}
 	{% include "partials/_navigation.html" %}
@@ -12,27 +14,12 @@ title: Index page
 
 
 {% block content %}
-	
-	{# variable example 
-	<h1>{{title}}</h1>#}
-
-	
+	{% import "data/data.html" as content %}
 	{% include "partials/_content.html" %}
-
-	{# mixin example #}
-	{#{{mixins.icon('facebook')}}#}
-
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
 		
-		{#{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}#}
-	{# end of example #}
-
 {% endblock %}
 
 {% block footer %}
+	{% import "data/data.html" as footer %}
 	{% include "partials/_footer.html" %}
 {% endblock %}

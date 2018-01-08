@@ -1,25 +1,18 @@
 <div class="footer">
 	<div class="footer__navig">
+		{% for items in footer.nav %}
 		<div class="block">
 			<ul class="navig">
-				<li><a href="#">Users and Groups</a></li>
-				<li><a href="#">Help</a></li>
+				{% for item in items.link%}
+				<li><a href="#">{{item}}</a></lis>
+				{% endfor %}
 			</ul>
 		</div>
-		<div class="block">
-			<ul class="navig">
-				<li><a href="#">About DocuShare</a></li>
-				<li><a href="#">Statistics</a></li>
-			</ul>
-		</div>
-		<div class="block">
-			<ul class="navig">
-				<li><a href="#">Mobile Client Settings</a></li>
-				<li><a href="#">Cookies</a></li>
-			</ul>
-		</div>
+		{% endfor %}
 	</div>
-	<div class="copy">
+
+		
+	<div class="footer__copy">
 		<p>&copy;1996-2015 SupercompanyCorporation.<br> All Rights Reserved</p>
 	</div>
 </div>

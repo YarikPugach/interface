@@ -5,28 +5,28 @@
 	flex-wrap: wrap
 	justify-content: space-between
 	align-items: center
-	border: 1px solid #dcdee0
-	padding: 7px 0
-	overflow: hidden
-	+r(930)
+	border: 1px solid $color-btn
+	+r(946)
 		display: none
 .nav
 	display: flex
+	align-items: center
 	&__list
-		padding-top: 7px
-		padding-bottom: 8px
 		&-link
-			padding: 20px 40px 20px 25px
+			padding: 15px 40px 15px 25px
 			color: #2e3236
 			text-transform: uppercase
 			transition: 0.4s
+			display: flex
+			align-items: center
 			.icon
 				margin-right: 9px
+				font-size: 14px
 			&:hover
-				background: #383e42
-				color: #fff
+				background: $color-bg-nav
+				color: $color-white
 				.icon
-					fill: #dcdee0
+					fill: $color-btn
 .bg-job
 	display: flex
 	padding-right: 18px
@@ -39,9 +39,9 @@
 	font-weight: 500
 	width: 16px
 	height: 16px
-	background: #ff5f4b
+	background: $color-red
 	border-radius: 50%
 	text-align: center
 	line-height: 16px
-	color: #fff
+	color: $color-white
 	margin-left: 15px

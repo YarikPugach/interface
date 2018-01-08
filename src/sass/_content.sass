@@ -1,18 +1,41 @@
 .content
 	display: flex
 	flex-wrap: wrap
-	+r(1099)
+	+r(680)
 		justify-content: center
-	&__btn
+	&-btn
 		margin-top: 25px
-		&:hover
-			color: #fff
 
-/* Collections */
-.collect
-	padding: 24px 30px
-	width: 33.3%
-	min-width: 320px
+
+
+.posts
+	display: flex
+	flex-wrap: wrap
+
+	&-content
+		width: 66.6%
+		+r(1007)
+			justify-content: flex-end
+			width: 50%
+		+r(680)
+			justify-content: center
+			width: 50%
+	.post
+		padding: 24px 30px
+		+r(1007)
+			border-right: 1px solid $color-border
+		+r(930)
+			padding: 12px 15px
+
+		&-content
+			width: 50%
+			min-width: 315px
+			border-right: 1px solid $color-border
+			+r(1007)
+				border-top: 1px solid $color-border
+				border-left: 1px solid $color-border
+		&__works
+			margin-top: 30px
 
 .rubric
 	display: flex	
@@ -34,35 +57,22 @@
 	margin-bottom: 7px
 	margin-top: 30px
 	&-link
-		color: #0a4f8b
+		color: $color-link
 		&:hover
-			color: #68309c
+			color: $color-link-hover
 	&__description
 		font-size: 12px
 		font-weight: 300
-		color: #5c656c
-
-
-
-/* other links */
-.links
-	padding: 25px 36px
-	width: 33.4%
-	min-width: 320px
-	border-left: 1px solid #edeff1
-	border-right: 1px solid #edeff1
-	+r(1100)
-		border-right: none
-	+r(656)
-		border-top: 1px solid #edeff1
-		border-left: none
-
+		color: $color-text
 
 
 /* sidebar */
 .sidebar
-	width: 33.3%
+	width: 33.4%
 	min-width: 315px
+	+r(680)
+		width: 50%
+		border-left: 1px solid $color-border
 .rubric-dark
 	background: #606866
 	padding-top: 20px
@@ -74,26 +84,28 @@
 		align-items: center
 		padding-left: 29px
 		padding-right: 20px
-		+r(376)
-			padding-left: 5px
-			padding-right: 5px
-
+		+r(1110)
+			.rubric__title
+				flex-grow: 1
+				padding-left: 10px			
 		.icon
 			font-size: 30px
 		.title-light
 			// padding-left: 17px
 			// padding-right: 40px
-			color: #fff
+			color: $color-white
 		.btn-dark
 			font-size: 12px
 			font-weight: 100
-			color: #fff
+			color: $color-white
 			background-color: transparent
+			+r(1110)
+				margin: 0 auto
+				margin-top: 10px
 
 /* slider */
 .slider
-	background: #edeff1	
-
+	background: $color-bg	
 	.slides
 		padding: 24px 20px 24px 26px
 		&__title
@@ -112,8 +124,36 @@
 				font-size: 20px
 			.date
 				font-size: 13px
-				padding-left: 7px			
-				
+				padding-left: 7px		
+
+.slick-arrow
+	width: 30px
+	height: 30px
+	border-radius: 50%
+.slick-next
+	position: absolute
+	right: 20px
+	bottom: 20px
+	&:after
+		content: url(../icons/right-arrow.svg)
+		position: absolute
+		bottom: 50%
+		left: 50%
+		transform: translate(-50%, 60%)
+
+.slick-prev
+	position: absolute
+	right: 58px
+	bottom: 20px
+	z-index: 1
+	&:after
+		content: url(../icons/left-arrow.svg)
+		position: absolute
+		bottom: 50%
+		left: 50%
+		transform: translate(-50%, 60%)
+
+
 .icon-text
 	// .icon
 	// 	display: inline-block
@@ -123,13 +163,10 @@
 	// 	vertical-align: middle
 	display: flex
 	align-items: center
+	.text
+		padding-left: 10px
 
-.communities
-	padding: 30px 20px 25px 30px
-	&__works
-		margin-top: 30px
-		.text
-			padding-left: 10px
+
 
 .h3-indent
 	margin-top: 15px
@@ -137,30 +174,19 @@
 .tags
 	display: flex
 	margin-top: 35px
-.tag
-	border: 1px solid #edeff1
-	margin-right: 20px
-	padding: 14px 24px 17px 17px
-	cursor: pointer
-	&__title
-		font-size: 17px
-		font-weight: 400
-		margin-bottom: 33px
-		color: #383e42
+	.tag
+		border: 1px solid $color-border
+		margin-right: 20px
+		padding: 14px 24px 17px 17px
+		cursor: pointer
+		+r(994)
+			padding: 14px 20px 17px 15px
+
+		&__title
+			font-size: 17px
+			font-weight: 400
+			margin-bottom: 33px
+			color: $color-text
 
 
-.slick-arrow
-	width: 30px
-	height: 30px
-	border-radius: 50%
 
-.slick-next
-	position: absolute
-	right: 20px
-	bottom: 20px
-
-.slick-prev
-	position: absolute
-	right: 58px
-	bottom: 20px
-	z-index: 1
