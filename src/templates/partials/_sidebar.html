@@ -1,72 +1,78 @@
+<!-- begin sidebar -->
 <div class="sidebar">
+	<!-- begin start -->
+	<div class="start">
+		<div class="start__img">
+			{{mixins.icon('paper-plane')}}
+		</div>
+		<div class="start__title block-title block-title--light">
+			<h2 class="h2 start__header">getting started</h2>
+			<p>Top level collections</p>
+		</div>
+		<button class="btn start__btn">Take a Tutorial</button>
+	</div>
+	<!-- end start -->
 
-		<div class="start">
-			<div class="rubric-dark">
-				<div class="wrapp">				
-					<div class="rubric__img">
-						{{mixins.icon('paper-plane')}}
-					</div>	
-					<div class="rubric__title title-light">
-						<h2 class="h2">getting started</h2>
-						<p class="h2__description">Top level collections</p>
+	<!-- begin feedback -->
+	<div class="feedback">
+		<!-- begin slider -->
+		<div class="slider js-carousel">
+			{% for slide in content.slides %}
+			<div class="slide">
+				<div class="slide__header">
+					<div class="slide__img"><img src="img/{{slide.img}}" alt="photo"></div>
+					<div class="slide__title">
+						<h2 class="h2 h2--small">{{slide.title}}</h2>
+						<p>{{slide.description}}</p>
 					</div>
-					<button class="btn btn-dark">Take a Tutorial</button>
+					<div class="slide__icon">{{mixins.icon(slide.icon_title)}}</div>
+				</div>
+				<div class="slide__text">
+					<p>{{slide.text}}</p>
+				</div>
+				<div class="slide__date">
+					{{mixins.icon(slide.icon_social)}}
+					<p>{{slide.date}}</p>
 				</div>
 			</div>
-			
-			<div class="slider js-carousel">
-				{% for slide in content.slides %}
-				<div class="slides">
-					<div class="slides__header rubric">
-						<div class="slides__img"><img src="img/{{slide.img}}" alt="photo"></div>
-						<div class="slides__title">
-							<h2 class="h2 h2-size">{{slide.title}}</h2>
-							<p class="h2__description"><a href="#">{{slide.description}}</a></p>
-						</div>
-						<div class="slides__icon">{{mixins.icon(slide.icon_title)}}</div>
-					</div>
-					<div class="slides__text">
-						<p>{{slide.text}}</p>
-					</div>
-					<div class="slides__date icon-text">
-						{{mixins.icon(slide.icon_social)}}
-						<p class="date text">{{slide.date}}</p>
-					</div>
-				</div>
-				{% endfor %}
-			</div><!-- end slider -->
-		</div><!-- end start -->
+			{% endfor %}
+		</div>
+		<!-- end slider -->
+	</div>
+	<!-- end feedback -->
 
+	<!-- begin post -->
+	<div class="post">
+		<div class="rubric">
+			<div class="rubric__title block-title">
+				<h2 class="h2 rubric__header">Communities</h2>
+				<p>Explore our comunity areas</p>
+			</div>
+			<div class="rubric__img">
+				{{mixins.icon('share')}}
+			</div>	
+		</div>
+		<div class="post__works">
+			{{mixins.icon('file')}}
+			<p>Workspaces</p>
+		</div>
+		<div class="info">
+			<h3 class="h3 info__header"><a href="#" class="h3__link">Duracell Inc</a></h3>
+			<p>PM, Eng & SQA document share and test file locations  for Cogniance engagement</p>
+		</div>
+	
+		<div class="tags">
+			<div class="tag">
+				<h4 class="tag__title">Wiki</h4>
+				<button class="btn">See More</button>
+			</div>
+			<div class="tag">
+				<h4 class="tag__title">Weblogs</h4>
+				<button class="btn">See More</button>
+			</div>
+		</div>
+	</div>
+	<!-- end post -->
 
-		<div class="posts">
-			<div class="post">
-				<div class="rubric">
-					<div class="rubric__title">
-						<h2 class="h2">Communities</h2>
-						<p class="h2__description">Explore our comunity areas</p>
-					</div>
-					<div class="rubric__img">
-						{{mixins.icon('share')}}
-					</div>	
-				</div>
-				<div class="post__works icon-text">
-					{{mixins.icon('file')}}
-					<p class="text">Workspaces</p>
-				</div>
-				<h3 class="h3 h3-indent"><a href="#" class="h3-link">Duracell Inc</a></h3>
-				<p class="h3__description">PM, Eng & SQA document share and test file locations  for Cogniance engagement</p>
-			
-				<div class="tags">
-					<div class="tag">
-						<h4 class="tag__title">Wiki</h4>
-						<button class="btn">See More</button>
-					</div>
-					<div class="tag">
-						<h4 class="tag__title">Weblogs</h4>
-						<button class="btn">See More</button>
-					</div>
-				</div>
-			</div><!-- post -->
-		</div><!-- posts -->
-
-</div><!-- end sidebar -->
+</div>
+<!-- end sidebar

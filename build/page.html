@@ -25,7 +25,7 @@
           <h1><a href="#" class="logo-link">SuperCompany</a></h1>
         </div>
         <div class="search">
-          <div class="search__input"> <input type="search" class="search__input-term" placeholder="Search"> <button class="search__input-btn">
+          <div class="search__container"> <input type="search" class="search__input" placeholder="Search"> <button class="search__btn">
 <svg class="icon icon-search"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
 </button> </div>
           <div class="search__settings"> <svg class="icon icon-gear"><use xlink:href="img/sprite.svg#icon-gear"></use></svg> <a href="#">Advanced</a> </div>
@@ -35,40 +35,45 @@
       </div>
       <div class="navigation">
         <ul class="nav">
-          <li class="nav__list"><a class="nav__list-link" href="#">
-		
+          <li class="nav__item"><a class="nav__link" href="#">
+
+			
 
 		Home</a></li>
-          <li class="nav__list"><a class="nav__list-link" href="#">
-		
+          <li class="nav__item"><a class="nav__link" href="#">
+
 			
+				
 <svg class="icon icon-home"><use xlink:href="img/sprite.svg#icon-home"></use></svg>
 
-		
+			
 
 		My docusshare</a></li>
-          <li class="nav__list"><a class="nav__list-link" href="#">
-		
+          <li class="nav__item"><a class="nav__link" href="#">
+
 			
+				
 <svg class="icon icon-tasks"><use xlink:href="img/sprite.svg#icon-tasks"></use></svg>
 
-		
+			
 
 		My tasks</a></li>
-          <li class="nav__list"><a class="nav__list-link" href="#">
-		
+          <li class="nav__item"><a class="nav__link" href="#">
+
 			
+				
 <svg class="icon icon-favorites"><use xlink:href="img/sprite.svg#icon-favorites"></use></svg>
 
-		
+			
 
 		My favorites</a></li>
-          <li class="nav__list"><a class="nav__list-link" href="#">
-		
+          <li class="nav__item"><a class="nav__link" href="#">
+
 			
+				
 <svg class="icon icon-recent"><use xlink:href="img/sprite.svg#icon-recent"></use></svg>
 
-		
+			
 
 		Recent</a></li>
         </ul>
@@ -78,17 +83,17 @@
         </div>
       </div>
       <!-- for mobile -->
-      <div class="mobile-navigation"> <span class="btn-menu js-iconMenu">
-			Menu
-		</span>
-        <nav class="no-active js-toggleEffect">
-          <ul class="mobile-nav">
-            <li class="mobile-nav__list"><a class="mobile-nav__list-link" href="#">
+      <div class="mobile-navigation"> <span class="btn-menu js-iconMenu">Menu</span>
+        <nav class="mobile-nav js-toggleEffect">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">
+
 				
 
 				Home
 			</a></li>
-            <li class="mobile-nav__list"><a class="mobile-nav__list-link" href="#">
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">
+
 				
 					
 <svg class="icon icon-home"><use xlink:href="img/sprite.svg#icon-home"></use></svg>
@@ -97,7 +102,8 @@
 
 				My docusshare
 			</a></li>
-            <li class="mobile-nav__list"><a class="mobile-nav__list-link" href="#">
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">
+
 				
 					
 <svg class="icon icon-tasks"><use xlink:href="img/sprite.svg#icon-tasks"></use></svg>
@@ -106,7 +112,8 @@
 
 				My tasks
 			</a></li>
-            <li class="mobile-nav__list"><a class="mobile-nav__list-link" href="#">
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">
+
 				
 					
 <svg class="icon icon-favorites"><use xlink:href="img/sprite.svg#icon-favorites"></use></svg>
@@ -115,7 +122,8 @@
 
 				My favorites
 			</a></li>
-            <li class="mobile-nav__list"><a class="mobile-nav__list-link" href="#">
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">
+
 				
 					
 <svg class="icon icon-recent"><use xlink:href="img/sprite.svg#icon-recent"></use></svg>
@@ -132,157 +140,166 @@
         </nav>
       </div>
       <div class="content">
-        <div class="posts posts-content">
-          <div class="post post-content">
+        <div class="posts posts--content">
+          <div class="post post--content">
             <div class="rubric">
-              <div class="rubric__title">
-                <h2 class="h2">Collections</h2>
-                <p class="h2__description">Top level collections</p>
+              <div class="rubric__title block-title">
+                <h2 class="h2 rubric__header">Collections</h2>
+                <p>Top level collections</p>
               </div>
               <div class="rubric__img"> <svg class="icon icon-layers"><use xlink:href="img/sprite.svg#icon-layers"></use></svg> </div>
             </div>
-            <h3 class="h3"><a href="#" class="h3-link">External Materials</a></h3>
-            <p class="h3__description">Content for collaboration with external partixipants</p>
-            <h3 class="h3"><a href="#" class="h3-link">Branding Materials</a></h3>
-            <p class="h3__description">All document components (text_graphics_fills_rules_ etc)</p>
-            <h3 class="h3"><a href="#" class="h3-link">Print-ready Materials</a></h3>
-            <p class="h3__description">The department that generates a print shop request is responsiиду for the work</p> <button class="btn content-btn">See more</button> </div>
-          <div class="post post-content">
+            <div class="info">
+              <h3 class="h3 info__header"><a href="#" class="h3__link">External Materials</a></h3>
+              <p>Content for collaboration with external partixipants</p>
+            </div>
+            <div class="info">
+              <h3 class="h3 info__header"><a href="#" class="h3__link">Branding Materials</a></h3>
+              <p>All document components (text_graphics_fills_rules_ etc)</p>
+            </div>
+            <div class="info">
+              <h3 class="h3 info__header"><a href="#" class="h3__link">Print-ready Materials</a></h3>
+              <p>The department that generates a print shop request is responsiиду for the work</p>
+            </div> <button class="btn post__btn">See more</button> </div>
+          <div class="post post--content">
             <div class="rubric">
-              <div class="rubric__title">
-                <h2 class="h2">Other links</h2>
-                <p class="h2__description">Links to other content</p>
+              <div class="rubric__title block-title">
+                <h2 class="h2 rubric__header">Other links</h2>
+                <p>Links to other content</p>
               </div>
               <div class="rubric__img"> <svg class="icon icon-link"><use xlink:href="img/sprite.svg#icon-link"></use></svg> </div>
             </div>
-            <h3 class="h3"><a href="#" class="h3-link">My DocuShare</a></h3>
-            <p class="h3__description">Your personalized DocuShare home page</p>
-            <h3 class="h3"><a href="#" class="h3-link">WorkCentre Scan Repository</a></h3>
-            <p class="h3__description">Temporary storage for scanned documents</p>
-            <h3 class="h3"><a href="#" class="h3-link">Contact Information</a></h3>
-            <p class="h3__description">Number and e-mail address of the original document creator creator</p> <button class="btn content-btn">See more</button> </div>
-        </div>
-        <div class="sidebar">
-          <div class="start">
-            <div class="rubric-dark">
-              <div class="wrapp">
-                <div class="rubric__img"> <svg class="icon icon-paper-plane"><use xlink:href="img/sprite.svg#icon-paper-plane"></use></svg> </div>
-                <div class="rubric__title title-light">
-                  <h2 class="h2">getting started</h2>
-                  <p class="h2__description">Top level collections</p>
-                </div> <button class="btn btn-dark">Take a Tutorial</button> </div>
+            <div class="info">
+              <h3 class="h3 info__header"><a href="#" class="h3__link">My DocuShare</a></h3>
+              <p>Your personalized DocuShare home page</p>
             </div>
+            <div class="info">
+              <h3 class="h3 info__header"><a href="#" class="h3__link">WorkCentre Scan Repository</a></h3>
+              <p>Temporary storage for scanned documents</p>
+            </div>
+            <div class="info">
+              <h3 class="h3 info__header"><a href="#" class="h3__link">Contact Information</a></h3>
+              <p>Number and e-mail address of the original document creator creator</p>
+            </div> <button class="btn post__btn">See more</button> </div>
+        </div>
+        <!-- begin sidebar -->
+        <div class="sidebar">
+          <!-- begin start -->
+          <div class="start">
+            <div class="start__img"> <svg class="icon icon-paper-plane"><use xlink:href="img/sprite.svg#icon-paper-plane"></use></svg> </div>
+            <div class="start__title block-title block-title--light">
+              <h2 class="h2 start__header">getting started</h2>
+              <p>Top level collections</p>
+            </div> <button class="btn start__btn">Take a Tutorial</button> </div>
+          <!-- end start -->
+          <!-- begin feedback -->
+          <div class="feedback">
+            <!-- begin slider -->
             <div class="slider js-carousel">
-              <div class="slides">
-                <div class="slides__header rubric">
-                  <div class="slides__img"><img src="img/photo-1.png" alt="photo"></div>
-                  <div class="slides__title">
-                    <h2 class="h2 h2-size">BritishMonarchy</h2>
-                    <p class="h2__description"><a href="#">@BritishMonarchy</a></p>
+              <div class="slide">
+                <div class="slide__header">
+                  <div class="slide__img"><img src="img/photo-1.png" alt="photo"></div>
+                  <div class="slide__title">
+                    <h2 class="h2 h2--small">BritishMonarchy</h2>
+                    <p>@BritishMonarchy</p>
                   </div>
-                  <div class="slides__icon"> <svg class="icon icon-speech"><use xlink:href="img/sprite.svg#icon-speech"></use></svg> </div>
+                  <div class="slide__icon"> <svg class="icon icon-speech"><use xlink:href="img/sprite.svg#icon-speech"></use></svg> </div>
                 </div>
-                <div class="slides__text">
+                <div class="slide__text">
                   <p>It is a pleasure to open the information Age exhibitions today at the @ScienceMuseum and I hope people will enjoy visiting.</p>
                 </div>
-                <div class="slides__date icon-text"> <svg class="icon icon-tw"><use xlink:href="img/sprite.svg#icon-tw"></use></svg>
-                  <p class="date text">1.35 PM - 24 Oct 2014</p>
+                <div class="slide__date"> <svg class="icon icon-tw"><use xlink:href="img/sprite.svg#icon-tw"></use></svg>
+                  <p>1.35 PM - 24 Oct 2014</p>
                 </div>
               </div>
-              <div class="slides">
-                <div class="slides__header rubric">
-                  <div class="slides__img"><img src="img/photo-1.png" alt="photo"></div>
-                  <div class="slides__title">
-                    <h2 class="h2 h2-size">BritishMonarchy</h2>
-                    <p class="h2__description"><a href="#">@BritishMonarchy</a></p>
+              <div class="slide">
+                <div class="slide__header">
+                  <div class="slide__img"><img src="img/photo-1.png" alt="photo"></div>
+                  <div class="slide__title">
+                    <h2 class="h2 h2--small">BritishMonarchy</h2>
+                    <p>@BritishMonarchy</p>
                   </div>
-                  <div class="slides__icon"> <svg class="icon icon-speech"><use xlink:href="img/sprite.svg#icon-speech"></use></svg> </div>
+                  <div class="slide__icon"> <svg class="icon icon-speech"><use xlink:href="img/sprite.svg#icon-speech"></use></svg> </div>
                 </div>
-                <div class="slides__text">
+                <div class="slide__text">
                   <p>It is a pleasure to open the information Age exhibitions today at the @ScienceMuseum and I hope people will enjoy visiting.</p>
                 </div>
-                <div class="slides__date icon-text"> <svg class="icon icon-tw"><use xlink:href="img/sprite.svg#icon-tw"></use></svg>
-                  <p class="date text">1.35 PM - 24 Oct 2015</p>
+                <div class="slide__date"> <svg class="icon icon-tw"><use xlink:href="img/sprite.svg#icon-tw"></use></svg>
+                  <p>1.35 PM - 24 Oct 2015</p>
                 </div>
               </div>
-              <div class="slides">
-                <div class="slides__header rubric">
-                  <div class="slides__img"><img src="img/photo-1.png" alt="photo"></div>
-                  <div class="slides__title">
-                    <h2 class="h2 h2-size">BritishMonarchy</h2>
-                    <p class="h2__description"><a href="#">@BritishMonarchy</a></p>
+              <div class="slide">
+                <div class="slide__header">
+                  <div class="slide__img"><img src="img/photo-1.png" alt="photo"></div>
+                  <div class="slide__title">
+                    <h2 class="h2 h2--small">BritishMonarchy</h2>
+                    <p>@BritishMonarchy</p>
                   </div>
-                  <div class="slides__icon"> <svg class="icon icon-speech"><use xlink:href="img/sprite.svg#icon-speech"></use></svg> </div>
+                  <div class="slide__icon"> <svg class="icon icon-speech"><use xlink:href="img/sprite.svg#icon-speech"></use></svg> </div>
                 </div>
-                <div class="slides__text">
+                <div class="slide__text">
                   <p>It is a pleasure to open the information Age exhibitions today at the @ScienceMuseum and I hope people will enjoy visiting.</p>
                 </div>
-                <div class="slides__date icon-text"> <svg class="icon icon-tw"><use xlink:href="img/sprite.svg#icon-tw"></use></svg>
-                  <p class="date text">09.35 AM - 24 Oct 1994</p>
+                <div class="slide__date"> <svg class="icon icon-tw"><use xlink:href="img/sprite.svg#icon-tw"></use></svg>
+                  <p>09.35 AM - 24 Oct 1994</p>
                 </div>
               </div>
             </div>
             <!-- end slider -->
           </div>
-          <!-- end start -->
-          <div class="posts">
-            <div class="post">
-              <div class="rubric">
-                <div class="rubric__title">
-                  <h2 class="h2">Communities</h2>
-                  <p class="h2__description">Explore our comunity areas</p>
-                </div>
-                <div class="rubric__img"> <svg class="icon icon-share"><use xlink:href="img/sprite.svg#icon-share"></use></svg> </div>
+          <!-- end feedback -->
+          <!-- begin post -->
+          <div class="post">
+            <div class="rubric">
+              <div class="rubric__title block-title">
+                <h2 class="h2 rubric__header">Communities</h2>
+                <p>Explore our comunity areas</p>
               </div>
-              <div class="post__works icon-text"> <svg class="icon icon-file"><use xlink:href="img/sprite.svg#icon-file"></use></svg>
-                <p class="text">Workspaces</p>
-              </div>
-              <h3 class="h3 h3-indent"><a href="#" class="h3-link">Duracell Inc</a></h3>
-              <p class="h3__description">PM, Eng & SQA document share and test file locations for Cogniance engagement</p>
-              <div class="tags">
-                <div class="tag">
-                  <h4 class="tag__title">Wiki</h4> <button class="btn">See More</button> </div>
-                <div class="tag">
-                  <h4 class="tag__title">Weblogs</h4> <button class="btn">See More</button> </div>
-              </div>
+              <div class="rubric__img"> <svg class="icon icon-share"><use xlink:href="img/sprite.svg#icon-share"></use></svg> </div>
             </div>
-            <!-- post -->
+            <div class="post__works"> <svg class="icon icon-file"><use xlink:href="img/sprite.svg#icon-file"></use></svg>
+              <p>Workspaces</p>
+            </div>
+            <div class="info">
+              <h3 class="h3 info__header"><a href="#" class="h3__link">Duracell Inc</a></h3>
+              <p>PM, Eng & SQA document share and test file locations for Cogniance engagement</p>
+            </div>
+            <div class="tags">
+              <div class="tag">
+                <h4 class="tag__title">Wiki</h4> <button class="btn">See More</button> </div>
+              <div class="tag">
+                <h4 class="tag__title">Weblogs</h4> <button class="btn">See More</button> </div>
+            </div>
           </div>
-          <!-- posts -->
+          <!-- end post -->
         </div>
-        <!-- end sidebar -->
+        <!-- end sidebar
+
+</div><!-- end content -->
+        <div class="footer">
+          <div class="footer__nav">
+            <ul class="nav-pair">
+              <li class="nav-pair__item"><a href="#" class="nav-pair__link">Users and Groups</a></li>
+              <li class="nav-pair__item"><a href="#" class="nav-pair__link">Help</a></li>
+            </ul>
+            <ul class="nav-pair">
+              <li class="nav-pair__item"><a href="#" class="nav-pair__link">About DocuShare</a></li>
+              <li class="nav-pair__item"><a href="#" class="nav-pair__link">Statistics</a></li>
+            </ul>
+            <ul class="nav-pair">
+              <li class="nav-pair__item"><a href="#" class="nav-pair__link">Mobile Client Settings</a></li>
+              <li class="nav-pair__item"><a href="#" class="nav-pair__link">Cookies</a></li>
+            </ul>
+          </div>
+          <div class="footer__copy">
+            <p>&copy;1996-2015 SupercompanyCorporation.<br> All Rights Reserved</p>
+          </div>
+        </div>
       </div>
-      <!-- end content -->
-      <div class="footer">
-        <div class="footer__navig">
-          <div class="block">
-            <ul class="navig">
-              <li><a href="#">Users and Groups</a></lis>
-                <li><a href="#">Help</a></lis>
-            </ul>
-          </div>
-          <div class="block">
-            <ul class="navig">
-              <li><a href="#">About DocuShare</a></lis>
-                <li><a href="#">Statistics</a></lis>
-            </ul>
-          </div>
-          <div class="block">
-            <ul class="navig">
-              <li><a href="#">Mobile Client Settings</a></lis>
-                <li><a href="#">Cookies</a></lis>
-            </ul>
-          </div>
-        </div>
-        <div class="footer__copy">
-          <p>&copy;1996-2015 SupercompanyCorporation.<br> All Rights Reserved</p>
-        </div>
-      </div>
-    </div>
-    <!-- END content -->
-    <!-- BEGIN scripts -->
-    <script type="text/javascript" src="js/app.js"></script>
-    <!-- END scripts -->
+      <!-- END content -->
+      <!-- BEGIN scripts -->
+      <script type="text/javascript" src="js/app.js"></script>
+      <!-- END scripts -->
   </body>
 
 </html>

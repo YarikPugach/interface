@@ -1,0 +1,39 @@
+.posts
+	display: flex
+	flex-wrap: wrap
+	&--content
+		width: 66.6%
+		+r(1007)
+			justify-content: flex-end
+			width: 50%
+		+r(680)
+			justify-content: center
+			width: 50%
+
+.post
+	padding: 24px 30px
+	+r(1007)
+		border-right: 1px solid $color-border
+	+r(930)
+		padding: 12px 15px
+	&--content
+		width: 50%
+		min-width: 315px
+		border-right: 1px solid $color-border
+		+r(1007)
+			border-top: 1px solid $color-border
+			border-left: 1px solid $color-border
+	&__works
+		display: flex
+		align-items: center
+		margin-bottom: 15px
+		p
+			padding-left: 10px
+
+.rubric
+	display: flex	
+	align-items: center
+	justify-content: space-between
+	margin-bottom: 30px
+	.icon
+		font-size: 30px

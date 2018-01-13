@@ -2,10 +2,11 @@
 
 	<ul class="nav">
 		{% for item in header.navigation %}
-		<li class="nav__list"><a class="nav__list-link" href="#">
-		{% if item.nav_mixin %}
-			{{mixins.icon(item.nav_mixin)}}
-		{% endif %}
+		<li class="nav__item"><a class="nav__link" href="#">
+
+			{% if item.nav_mixin %}
+				{{mixins.icon(item.nav_mixin)}}
+			{% endif %}
 
 		{{item.nav_link}}</a></li>
 		{% endfor %}
@@ -17,16 +18,17 @@
 	</div>
 </div>
 
+
+
 <!-- for mobile -->
 <div class="mobile-navigation">
-	<span class="btn-menu js-iconMenu">
-			Menu
-		</span>
+	<span class="btn-menu js-iconMenu">Menu</span>
 
-	<nav class="no-active js-toggleEffect">
-		<ul class="mobile-nav">
+	<nav class="mobile-nav js-toggleEffect">
+		<ul class="mobile-nav__list">
 			{% for item in header.navigation %}
-			<li class="mobile-nav__list"><a class="mobile-nav__list-link" href="#">
+			<li class="mobile-nav__item"><a class="mobile-nav__link" href="#">
+
 				{% if item.nav_mixin %}
 					{{mixins.icon(item.nav_mixin)}}
 				{% endif %}

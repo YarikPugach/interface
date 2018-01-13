@@ -1,0 +1,98 @@
+/* sidebar */
+.sidebar
+	width: 33.4%
+	min-width: 315px
+	+r(680)
+		width: 50%
+		border-left: 1px solid $color-border
+.start
+	background: #606866
+	padding-top: 20px
+	padding-bottom: 20px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	padding-left: 29px
+	padding-right: 20px
+	align-items: center
+	&__btn
+		font-size: 12px
+		font-weight: 100
+		background: transparent
+		border-color: $color-white
+		color: $color-white
+	.icon
+		font-size: 30px
+
+
+/* slider */
+.slider
+	.slick-arrow
+		width: 30px
+		height: 30px
+		border-radius: 50%
+	.slick-next
+		position: absolute
+		right: 20px
+		bottom: 20px
+		&:after
+			content: url(../img/right-arrow.svg)
+			position: absolute
+			bottom: 50%
+			left: 50%
+			transform: translate(-50%, 60%)
+
+	.slick-prev
+		position: absolute
+		right: 58px
+		bottom: 20px
+		z-index: 1
+		&:after
+			content: url(../img/left-arrow.svg)
+			position: absolute
+			bottom: 50%
+			left: 50%
+			transform: translate(-50%, 60%)
+.slide	
+	background: $color-bg	
+	padding: 24px 20px 24px 26px
+	&__header
+		display: flex	
+		align-items: center
+		justify-content: space-between
+	&__title
+		flex-grow: 1
+		padding-left: 14px
+		
+	&__text
+		margin-top: 30px
+		font-size: 16px
+		font-weight: 400
+		margin-bottom: 40px
+	.icon
+		font-size: 30px
+	&__date
+		display: flex
+		align-items: center
+		.icon
+			font-size: 20px
+		p
+			font-size: 13px
+			padding-left: 7px		
+
+.tags
+	display: flex
+	margin-top: 35px
+.tag
+	border: 1px solid $color-border
+	margin-right: 20px
+	padding: 14px 24px 17px 17px
+	cursor: pointer
+	+r(994)
+		padding: 14px 20px 17px 15px
+
+	&__title
+		font-size: 17px
+		font-weight: 400
+		margin-bottom: 33px
+		color: $color-text

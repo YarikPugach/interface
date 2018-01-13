@@ -1,16 +1,13 @@
 <div class="footer">
-	<div class="footer__navig">
+	<div class="footer__nav">
 		{% for items in footer.nav %}
-		<div class="block">
-			<ul class="navig">
-				{% for item in items.link%}
-				<li><a href="#">{{item}}</a></lis>
-				{% endfor %}
-			</ul>
-		</div>
+		<ul class="nav-pair">
+			{% for item in items.link%}
+			<li class="nav-pair__item"><a href="#" class="nav-pair__link">{{item}}</a></li>
+			{% endfor %}
+		</ul>
 		{% endfor %}
 	</div>
-
 		
 	<div class="footer__copy">
 		<p>&copy;1996-2015 SupercompanyCorporation.<br> All Rights Reserved</p>

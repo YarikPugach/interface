@@ -1,21 +1,23 @@
-<div class="posts posts-content">
+<div class="posts posts--content">
 	{% for posts in content.post %}
-		<div class="post post-content">
-			<div class="rubric">
-				<div class="rubric__title">
-					<h2 class="h2">{{posts.title}}</h2>
-					<p class="h2__description">{{posts.description}}</p>
-				</div>
-				<div class="rubric__img">
-					{{mixins.icon(posts.icon)}}
-				</div>	
+	<div class="post post--content">
+		<div class="rubric">
+			<div class="rubric__title block-title">
+				<h2 class="h2 rubric__header">{{posts.title}}</h2>
+				<p>{{posts.description}}</p>
 			</div>
-			{% for title in posts.titles %}
-			<h3 class="h3"><a href="#" class="h3-link">{{title.heading}}</a></h3>
-			<p class="h3__description">{{title.descript}}</p>
-			{% endfor %}
-	
-			<button class="btn content-btn">See more</button>
+			<div class="rubric__img">
+				{{mixins.icon(posts.icon)}}
+			</div>	
+		</div>
+		{% for title in posts.titles %}
+		<div class="info">			
+			<h3 class="h3 info__header"><a href="#" class="h3__link">{{title.heading}}</a></h3>
+			<p>{{title.descript}}</p>
 		</div>
 		{% endfor %}
+
+		<button class="btn post__btn">See more</button>
 	</div>
+	{% endfor %}
+</div>

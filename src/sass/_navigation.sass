@@ -11,22 +11,24 @@
 .nav
 	display: flex
 	align-items: center
-	&__list
-		&-link
-			padding: 15px 40px 15px 25px
-			color: #2e3236
-			text-transform: uppercase
-			transition: 0.4s
-			display: flex
-			align-items: center
+	&__item
+		display: flex
+		align-items: center
+		transition: 0.4s
+	&__link
+		min-height: 47px
+		padding: 15px 40px 15px 25px
+		color: #2e3236
+		text-transform: uppercase
+		&:hover
+			background: $color-bg-nav
+			color: $color-white
 			.icon
-				margin-right: 9px
-				font-size: 14px
-			&:hover
-				background: $color-bg-nav
-				color: $color-white
-				.icon
-					fill: $color-btn
+				fill: $color-btn
+		.icon
+			margin-right: 9px
+			font-size: 14px
+
 .bg-job
 	display: flex
 	padding-right: 18px

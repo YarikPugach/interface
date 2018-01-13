@@ -8,11 +8,11 @@
 
 var mobileMenu = function() {
   var $btn  = $('.js-iconMenu'),
-    $menu = $('.js-toggleEffect');
-  $btn.click(function() {
-  	$menu.slideToggle();
-  });;
+    	$menu = $('.js-toggleEffect');
 
+  $btn.on('click', function() {
+	  	$menu.slideToggle();  
+  });
 };
 
 module.exports = mobileMenu;
